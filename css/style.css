@@ -1,0 +1,67 @@
+/**
+
+
+** COLORS **
+Navbar - 1F263E
+Dashboard Bag - D9DDDE
+
+
+** BUTTONS **
+
+
+
+**/
+
+@font-face {
+  font-family: 'sherpa'; /* A name you choose to use later */
+  src: url('fonts/GD Sherpa Variable.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'sherpa','Arial',sans-serif;
+    /* border: 1px solid red; */
+}
+
+
+
+.container{
+    display: flex;
+
+}
+
+.container .left{
+    background-color: #1F263E;
+    width: 15%;
+    height: 100vh;
+    color: #fff;
+    /* display:flex;
+    align-items: center;
+    justify-content: center; */
+
+}
+.company-logo{
+    text-align: center;
+    /* border: 1px solid red; */
+   padding: 15px
+}
+
+/* WORKEASE LOGO */
+
+.container .right{
+    background-color: #D9DDDE;
+width: 85%;
+
+    /* display:flex;
+    align-items: center;
+    justify-content: center; */
+
+}
+
+.container .right .head{
+    padding: 20px;
+    font-size: 1.15em;
+background-color: #fff;
+}
