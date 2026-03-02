@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Test HRIS</title>
+    <link rel="stylesheet" href="../css/style2.css" />
+    <script type="text/javascript" src="../app.js" defer></script>
+  </head>
+  <body>
+    <nav id="sidebar">
+      <ul>
+        <li>
+          <span class="logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M0.251559 6.60934C-1.52697 19.8761 6.56052 23.0726 10.8266 23.0125C10.5382 18.8306 6.13992 13.2988 3.97684 11.0556C7.38968 12.017 10.6463 17.4647 11.848 20.0684C11.848 17.713 12.4088 15.1614 12.6892 14.1801C9.2283 8.98871 2.95539 6.96985 0.251559 6.60934Z"
+                fill="url(#paint0_linear_185_742)"
+              />
+              <path
+                d="M19.6474 4.86982C13.2063 12.3204 12.317 19.5306 13.3985 23.0756C25.9924 20.528 26.0765 7.93416 23.9736 0.00294143C15.2732 -0.141263 9.4329 5.05008 7.69043 8.23459C10.0938 9.67663 12.4372 11.7395 13.2183 12.4405C15.5736 8.54703 18.4657 5.6309 19.6474 4.86982Z"
+                fill="url(#paint1_linear_185_742)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_185_742"
+                  x1="6.3446"
+                  y1="6.60934"
+                  x2="6.3446"
+                  y2="23.0134"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="#AEC9D5" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_185_742"
+                  x1="16.3451"
+                  y1="0"
+                  x2="16.3451"
+                  y2="23.0756"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="#AEC9D5" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <!-- WORKEASE LOGO TEXT -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="106"
+              height="17"
+              viewBox="0 0 106 17"
+              fill="none"
+            >
+              <path
+                d="M22.4981 0.953271L18.0215 16.7957H14.2335L11.2261 5.51535L8.08096 16.7957L4.31597 16.8184L0 0.953271H3.44359L6.26734 13.255L9.52727 0.953271H13.1086L16.1849 13.1869L19.0316 0.953271H22.4981Z"
+                fill="url(#paint0_linear_185_745)"
+              />
+              <path
+                d="M29.0964 17C27.872 17 26.77 16.7352 25.7905 16.2056C24.811 15.6609 24.0381 14.8968 23.4718 13.9132C22.9209 12.9297 22.6454 11.7948 22.6454 10.5087C22.6454 9.22252 22.9285 8.08767 23.4948 7.10414C24.0764 6.12061 24.8646 5.36404 25.8594 4.83445C26.8542 4.28972 27.9638 4.01736 29.1882 4.01736C30.4126 4.01736 31.5222 4.28972 32.517 4.83445C33.5118 5.36404 34.2924 6.12061 34.8586 7.10414C35.4402 8.08767 35.731 9.22252 35.731 10.5087C35.731 11.7948 35.4326 12.9297 34.8357 13.9132C34.2541 14.8968 33.4583 15.6609 32.4481 16.2056C31.4533 16.7352 30.3361 17 29.0964 17ZM29.0964 14.231C29.678 14.231 30.2213 14.0948 30.7263 13.8224C31.2467 13.5349 31.6599 13.1113 31.966 12.5514C32.2721 11.9915 32.4252 11.3106 32.4252 10.5087C32.4252 9.31331 32.1038 8.39786 31.461 7.76235C30.8335 7.1117 30.0606 6.78638 29.1423 6.78638C28.224 6.78638 27.4511 7.1117 26.8236 7.76235C26.2114 8.39786 25.9053 9.31331 25.9053 10.5087C25.9053 11.7041 26.2038 12.6271 26.8006 13.2777C27.4128 13.9132 28.1781 14.231 29.0964 14.231Z"
+                fill="url(#paint1_linear_185_745)"
+              />
+              <path
+                d="M40.1548 6.17356C40.568 5.50779 41.1037 4.98576 41.7618 4.60748C42.4352 4.22919 43.2004 4.04005 44.0575 4.04005V7.3765H43.2081C42.198 7.3765 41.4327 7.61104 40.9124 8.08011C40.4073 8.54918 40.1548 9.36627 40.1548 10.5314V16.7957H36.9408V4.22163H40.1548V6.17356Z"
+                fill="url(#paint2_linear_185_745)"
+              />
+              <path
+                d="M52.6044 16.7957L48.2885 11.4393V16.7957H45.0745V0H48.2885V9.55541L52.5585 4.22163H56.7367L51.1352 10.5314L56.7827 16.7957H52.6044Z"
+                fill="url(#paint3_linear_185_745)"
+              />
+              <path
+                d="M60.5473 3.51802V7.48999H65.9423V10.0093H60.5473V14.2083H66.631V16.7957H57.3333V0.930573H66.631V3.51802H60.5473Z"
+                fill="url(#paint4_linear_185_745)"
+              />
+              <path
+                d="M67.5774 10.4633C67.5774 9.19226 67.8299 8.06498 68.335 7.08144C68.8554 6.09791 69.5517 5.34134 70.4241 4.81175C71.3118 4.28215 72.299 4.01736 73.3856 4.01736C74.3345 4.01736 75.161 4.2065 75.865 4.58478C76.5843 4.96306 77.1582 5.4397 77.5868 6.01469V4.22163H80.8238V16.7957H77.5868V14.9573C77.1736 15.5474 76.5996 16.0392 75.865 16.4326C75.1457 16.8109 74.3116 17 73.3626 17C72.2913 17 71.3118 16.7276 70.4241 16.1829C69.5517 15.6382 68.8554 14.8741 68.335 13.8905C67.8299 12.8919 67.5774 11.7494 67.5774 10.4633ZM77.5868 10.5087C77.5868 9.73698 77.4337 9.07877 77.1276 8.53405C76.8215 7.97419 76.4083 7.55051 75.888 7.26302C75.3676 6.96039 74.809 6.80908 74.2121 6.80908C73.6152 6.80908 73.0642 6.95283 72.5591 7.24032C72.0541 7.52782 71.6409 7.95149 71.3195 8.51135C71.0134 9.05608 70.8603 9.70672 70.8603 10.4633C70.8603 11.2198 71.0134 11.8856 71.3195 12.4606C71.6409 13.0205 72.0541 13.4517 72.5591 13.7543C73.0795 14.057 73.6305 14.2083 74.2121 14.2083C74.809 14.2083 75.3676 14.0645 75.888 13.777C76.4083 13.4744 76.8215 13.0507 77.1276 12.506C77.4337 11.9462 77.5868 11.2804 77.5868 10.5087Z"
+                fill="url(#paint5_linear_185_745)"
+              />
+              <path
+                d="M87.6819 17C86.6412 17 85.7076 16.8184 84.8811 16.4553C84.0546 16.077 83.3965 15.5701 82.9068 14.9346C82.4323 14.2991 82.1721 13.5955 82.1262 12.8238H85.3632C85.4244 13.308 85.6617 13.7089 86.0749 14.0267C86.5034 14.3445 87.0314 14.5033 87.6589 14.5033C88.2711 14.5033 88.7456 14.3823 89.0823 14.1402C89.4343 13.8981 89.6103 13.5879 89.6103 13.2096C89.6103 12.8011 89.396 12.4984 88.9675 12.3017C88.5543 12.0899 87.8885 11.8629 86.9702 11.6208C86.0213 11.3939 85.2408 11.1593 84.6286 10.9172C84.0317 10.6751 83.5113 10.3044 83.0675 9.80507C82.6389 9.30574 82.4247 8.6324 82.4247 7.78505C82.4247 7.08901 82.6236 6.45349 83.0216 5.8785C83.4348 5.30352 84.0164 4.84958 84.7663 4.51669C85.5316 4.1838 86.4269 4.01736 87.4523 4.01736C88.9675 4.01736 90.1766 4.39564 91.0796 5.1522C91.9826 5.89364 92.48 6.89987 92.5718 8.17089H89.4955C89.4496 7.67156 89.2353 7.27815 88.8527 6.99065C88.4854 6.68803 87.988 6.53672 87.3605 6.53672C86.7789 6.53672 86.3274 6.64263 86.006 6.85447C85.6999 7.06631 85.5469 7.36137 85.5469 7.73965C85.5469 8.16333 85.7611 8.48865 86.1897 8.71562C86.6182 8.92746 87.284 9.14686 88.187 9.37383C89.1052 9.6008 89.8628 9.83534 90.4597 10.0774C91.0566 10.3195 91.5693 10.6978 91.9979 11.2123C92.4417 11.7116 92.6713 12.3774 92.6866 13.2096C92.6866 13.9359 92.48 14.5866 92.0667 15.1616C91.6688 15.7365 91.0872 16.1905 90.322 16.5234C89.572 16.8411 88.692 17 87.6819 17Z"
+                fill="url(#paint6_linear_185_745)"
+              />
+              <path
+                d="M106 10.2363C106 10.6903 105.969 11.0988 105.908 11.462H96.6105C96.687 12.3698 97.0084 13.081 97.5747 13.5955C98.141 14.1099 98.8373 14.3672 99.6638 14.3672C100.858 14.3672 101.707 13.8603 102.212 12.8465H105.679C105.311 14.057 104.607 15.0556 103.567 15.8425C102.526 16.6142 101.248 17 99.7327 17C98.5083 17 97.4063 16.7352 96.4268 16.2056C95.4626 15.6609 94.705 14.8968 94.154 13.9132C93.6184 12.9297 93.3505 11.7948 93.3505 10.5087C93.3505 9.20739 93.6184 8.06498 94.154 7.08144C94.6897 6.09791 95.4397 5.34134 96.4039 4.81175C97.3681 4.28215 98.4777 4.01736 99.7327 4.01736C100.942 4.01736 102.021 4.27459 102.97 4.78905C103.934 5.30352 104.676 6.03738 105.196 6.99065C105.732 7.92879 106 9.01068 106 10.2363ZM102.671 9.32844C102.656 8.51135 102.357 7.8607 101.776 7.3765C101.194 6.87717 100.483 6.6275 99.6408 6.6275C98.845 6.6275 98.1716 6.8696 97.6206 7.35381C97.0849 7.82288 96.7559 8.48109 96.6334 9.32844H102.671Z"
+                fill="url(#paint7_linear_185_745)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_185_745"
+                  x1="51.4738"
+                  y1="16.9911"
+                  x2="51.7636"
+                  y2="1.16385"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="#AEC9D5" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_185_745"
+                  x1="51.4738"
+                  y1="16.9911"
+                  x2="51.7636"
+                  y2="1.16385"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="#AEC9D5" />
+                </linearGradient>
+                <linearGradient
+                  id="paint2_linear_185_745"
+                  x1="51.4738"
+                  y1="16.9911"
+                  x2="51.7636"
+                  y2="1.16385"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="#AEC9D5" />
+                </linearGradient>
+                <linearGradient
+                  id="paint3_linear_185_745"
+                  x1="51.4738"
+                  y1="16.9911"
+                  x2="51.7636"
+                  y2="1.16385"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="#AEC9D5" />
+                </linearGradient>
+                <linearGradient
+                  id="paint4_linear_185_745"
+                  x1="51.4738"
+                  y1="16.9911"
+                  x2="51.7636"
+                  y2="1.16385"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="#AEC9D5" />
+                </linearGradient>
+                <linearGradient
+                  id="paint5_linear_185_745"
+                  x1="51.4738"
+                  y1="16.9911"
+                  x2="51.7636"
+                  y2="1.16385"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="#AEC9D5" />
+                </linearGradient>
+                <linearGradient
+                  id="paint6_linear_185_745"
+                  x1="51.4738"
+                  y1="16.9911"
+                  x2="51.7636"
+                  y2="1.16385"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="#AEC9D5" />
+                </linearGradient>
+                <linearGradient
+                  id="paint7_linear_185_745"
+                  x1="51.4738"
+                  y1="16.9911"
+                  x2="51.7636"
+                  y2="1.16385"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="#AEC9D5" />
+                </linearGradient>
+              </defs></svg
+          ></span>
+          <button onclick="toggleSidebar()" id="toggle-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li class="active">
+          <a href="index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+              />
+            </svg>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z"
+              />
+            </svg>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- Code for dropdown button -->
+        <li>
+          <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M560-320h80v-80h80v-80h-80v-80h-80v80h-80v80h80v80ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h240l80 80h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Z"
+              />
+            </svg>
+            <span>Create</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+            </svg>
+          </button>
+          <!-- Sub menu -->
+          <ul class="sub-menu">
+            <div>
+              <li><a href="#">Folder</a></li>
+              <li><a href="#">Document</a></li>
+              <li><a href="#">Project</a></li>
+            </div>
+          </ul>
+        </li>
+        <!-- Code for dropdown button - TO DO LISTS -->
+        <li>
+          <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M640-120q-33 0-56.5-23.5T560-200v-160q0-33 23.5-56.5T640-440h160q33 0 56.5 23.5T880-360v160q0 33-23.5 56.5T800-120H640Zm0-80h160v-160H640v160ZM80-240v-80h360v80H80Zm560-280q-33 0-56.5-23.5T560-600v-160q0-33 23.5-56.5T640-840h160q33 0 56.5 23.5T880-760v160q0 33-23.5 56.5T800-520H640Zm0-80h160v-160H640v160ZM80-640v-80h360v80H80Zm640 360Zm0-400Z"
+              />
+            </svg>
+            <span>To-do Lists</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+            </svg>
+          </button>
+          <!-- Sub menu -->
+          <ul class="sub-menu">
+            <div>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">Private</a></li>
+              <li><a href="#">Coding</a></li>
+              <li><a href="#">Gardening</a></li>
+              <li><a href="#">School</a></li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <a href="calendar.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-188.5-11.5Q280-423 280-440t11.5-28.5Q303-480 320-480t28.5 11.5Q360-457 360-440t-11.5 28.5Q337-400 320-400t-28.5-11.5ZM640-400q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-188.5-11.5Q280-263 280-280t11.5-28.5Q303-320 320-320t28.5 11.5Q360-297 360-280t-11.5 28.5Q337-240 320-240t-28.5-11.5ZM640-240q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"
+              />
+            </svg>
+            <span>Calendar</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M367-527q-47-47-47-113t47-113q47-47 113-47t113 47q47 47 47 113t-47 113q-47 47-113 47t-113-47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm296.5-343.5Q560-607 560-640t-23.5-56.5Q513-720 480-720t-56.5 23.5Q400-673 400-640t23.5 56.5Q447-560 480-560t56.5-23.5ZM480-640Zm0 400Z"
+              />
+            </svg>
+            <span>Profile</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <h2>Hello World</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorum
+          soluta minima iusto labore placeat tempore repudiandae, eum veniam
+          maxime similique pariatur eos earum, voluptatibus accusamus nesciunt
+          ab veritatis doloremque.
+        </p>
+      </div>
+      <div class="container">
+        <h2>Hello World</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorum
+          soluta minima iusto labore placeat tempore repudiandae, eum veniam
+          maxime similique pariatur eos earum, voluptatibus accusamus nesciunt
+          ab veritatis doloremque.
+        </p>
+      </div>
+      <div class="container">
+        <h2>Hello World</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorum
+          soluta minima iusto labore placeat tempore repudiandae, eum veniam
+          maxime similique pariatur eos earum, voluptatibus accusamus nesciunt
+          ab veritatis doloremque.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
