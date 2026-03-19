@@ -14,7 +14,7 @@
       
   ?>
     <!-- separate file for navigation -->
-<?php include './inc/nav.inc.php' ?>
+<?php include 'inc/nav.inc.php' ?>
     <main>
       <div class="page-title-container">
         Admin Dashboard
