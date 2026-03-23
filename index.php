@@ -10,7 +10,7 @@
   <body>
 
   <?php
-      $pageTitle = 'index';
+      $activePage = 'index';
       
   ?>
     <!-- separate file for navigation -->

@@ -1,6 +1,7 @@
 <nav id="sidebar">
     <ul>
         <li>
+            <a href="index.php?home" class="sitelink">
             <span class="logo">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -151,23 +152,18 @@
                         </linearGradient>
                     </defs>
                 </svg></span>
-            <button onclick="toggleSidebar()" id="toggle-btn">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24px"
-                    viewBox="0 -960 960 960"
-                    width="24px"
-                    fill="#e3e3e3">
-                    <path
-                        d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z" />
-                </svg>
-            </button>
+</a>
         </li>
         <li>
             <span class="labeltext">Quick Access</span>
         </li>
         <li
-            <?php $activePage = ($pageTitle = 'index') ? "class='active'" : ""; ?>>
+            <?php
+            if (!empty($activePage) && $activePage === "index") echo 'class="active"';
+            else
+                echo '';
+
+            ?>>
             <a href="index.php">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -201,8 +197,7 @@
             <!-- Sub menu -->
             <ul class="sub-menu">
                 <div>
-                    <li
-                        <?php $activePage = ($pageTitle = 'leave-management') ? "class='active'" : ""; ?>>
+                    <li class="<?php if (!empty($activePage) && $activePage === "leave-management") echo 'active'; ?>">
                         <a href="leave-management.php">Leave Management</a>
                     </li>
                     <li><a href="#">Leave Request</a></li>
@@ -230,9 +225,9 @@
             <!-- Sub menu -->
             <ul class="sub-menu">
                 <div>
-                    <li
-                    <?php $activePage = ($pageTitle = 'employee-list') ? "class='active'" : ""; ?>>
-<a href="employee-list.php">Employee List</a></li>
+                    <li class="<?php if (!empty($activePage) && $activePage === "employee-list") echo 'active'; ?>">
+                        <a href="employee-list.php">Employee List</a>
+                    </li>
                     <li><a href="#">Station Codes</a></li>
                     <li><a href="#">Plantilla</a></li>
 
@@ -282,30 +277,54 @@
             <!-- Sub menu -->
             <ul class="sub-menu">
                 <div>
-                    <li><a href="#">Form 7</a></li>
+                    <li class="<?php if (!empty($activePage) && $activePage === "form7") echo 'active'; ?>">
+                        <a href="#">Form 7</a>
+                    </li>
                     <li><a href="#">Absences/Undertimes</a></li>
                 </div>
             </ul>
         </li>
-        <li
-                            <?php $activePage = ($pageTitle = 'my-profile') ? "class='active'" : ""; ?>>
-            <a href="my-profile.php">
+        <!-- Lower part -->
+         <div class="bottom-section">
+
+   
+        <li class="separator">
+            <span class="labeltext">Account</span>
+        </li>
+
+        <li class="<?php if (!empty($activePage) && $activePage === "settings") echo 'active'; ?>">
+            <a href="settings.php">
+
 
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
-                    <path d="M367-527q-47-47-47-113t47-113q47-47 113-47t113 47q47 47 47 113t-47 113q-47 47-113 47t-113-47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z" />
+                    <path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm112-260q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Z" />
                 </svg>
-                <span>My Profile</span>
+                <span>Settings</span>
             </a>
         </li>
-        <li>
-            <a href="notifications.php">
+        <li class="<?php if (!empty($activePage) && $activePage === "notifications") echo 'active'; ?>">
+            <!-- Redirection to Login Page -->
+        <a href="#">
 
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
-                    <path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160ZM480-80q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80Z" />
+                    <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z" />
                 </svg>
-                </svg>
-                <span>Notifications</span>
+                <span>Logout</span>
             </a>
         </li>
+        <!-- Profile Card Design  -->
+
+        <div class="navcard">
+            <img src="img/admin.jpg" alt="profile" class="navcard-img" height="100%" width="auto" loading="lazy">
+            <div class="navcard-details">
+                <p class="navcard-title">Kate Santiago</p>
+                <p class="navcard-position">Administrative Assistant II</p>
+            </div>
+
+        </div>
+      </div> 
+        
     </ul>
+
+
 </nav>

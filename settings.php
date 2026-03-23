@@ -3,26 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WorkEase | Leave Management</title>
+    <title>WorkEase | Notifications</title>
     <link rel="stylesheet" href="./css/style2.css" />
     <script type="text/javascript" src="app.js" defer></script>
   </head>
   <body>
 
   <?php
-      $activePage = 'leave-management';
+      $activePage= 'settings';
       // $activePage = '';
   ?>
     <!-- separate file for navigation -->
 <?php include 'inc/nav.inc.php' ?>
     <main>
       <div class="page-title-container">
-       Leave Management
-      </div>
-
-      <div class="we-body-container">
-        <h1 class="we-body-title">Leaves</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda facilis nisi fuga neque atque vero earum possimus esse cupiditate alias vitae, suscipit, commodi fugit nihil adipisci nobis quae culpa omnis.</p>
+       Settings
       </div>
 
     </main>

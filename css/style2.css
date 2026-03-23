@@ -4,12 +4,17 @@
   --base-clr: #1F263E;
   /* border: */
   --line-clr: #42434a; 
-  --hover-clr: #44485dba;
+  --hover-clr: #303750;
+   /* #363a4bba; */
+
   --text-clr: #e6e6ef;
   --accent-clr: #50B8E4;
-  --secondary-text-clr: #b0b3c1;
-  --body-clr: #A7A7A7;
+  --secondary-text-clr: #9a9ead;
+  --third-text-clr: #393e52;
+  --body-clr: #D9DDDE;
+  
   --white: #fdfdfd;
+  --borderColor: #C3C6CF;
 }
 
 * {
@@ -34,6 +39,7 @@ body{
 }
 
 #sidebar{
+
     box-sizing: border-box;
     height: 100vh;
     width: 250px;
@@ -44,8 +50,20 @@ body{
     top: 0;
     align-self: start;
     transition: 300ms ease-in-out;
-    overflow: hidden;
+    overflow:hidden;
     text-wrap: nowrap;
+
+   
+
+}
+
+#sidebar ul{
+display: flex;
+        flex-direction: column;
+        height: 100%;
+}
+#sidebar ul .bottom-section{
+    margin-top: auto;
 }
 
 /* Scroll bar design */
@@ -79,26 +97,21 @@ body{
 
 
 
-#sidebar ul > li:first-child{
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 16px;
-    .logo{
-        font-weight: 600;
-    }
-}
 
-#sidebar ul > li:nth-child(2){
-    padding: 0.5em 1em;
-    color: var(--text-clr);
-}
-#sidebar ul > li.active a{
+
+#sidebar ul > li.active a,
+#sidebar ul.submenu > li.active a,
+#sidebar ul div.bottom-section > li.active a{
 color: var(--accent-clr);
+background-color: var(--hover-clr);
+border-left: 4px solid var(--accent-clr);
 
 svg{
     fill: var(--accent-clr);
 }
 }
+
+
 
 #sidebar a, #sidebar .dropdown-btn, #sidebar .logo{
     /* border-radius: 0.5em; */
@@ -119,6 +132,14 @@ svg{
     cursor: pointer;
 }
 
+#sidebar a.sitelink,
+#sidebar a.sitelink:hover{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
 #sidebar svg{
     flex-shrink: 0;
     fill: var(--text-clr);
@@ -130,11 +151,12 @@ svg{
 flex-grow: 1;
 }
 
-/* #sidebar li > span.labeltext{
-    padding: 2em 1em;
+/* #sidebar li span.labeltext{
+    padding: 3em 1em;
     color: var(--text-clr);
-} */
 
+
+} */
 
 #sidebar a:hover,
 #sidebar a:active,
@@ -144,6 +166,8 @@ flex-grow: 1;
     border-left: 4px solid var(--accent-clr)
         /* padding: 5px 0.5em; */
 }
+
+
 
 #sidebar .sub-menu{
     display: grid;
@@ -217,4 +241,82 @@ h2, p {
     background: var(--white);
     color: var(--base-clr);
     font-size: 1.6rem;
+     filter: drop-shadow(0px 3px 2px var(--borderColor));
+}
+
+/* Navigation Card with Profile */
+
+#sidebar .navcard img.navcard-img{
+ border-radius: 50%;
+ width: 40px;
+ height: 40px;
+ margin-right: 2px;
+
+}
+
+#sidebar .navcard{
+    display: flex;
+    /* border: 1px solid #fff; */
+    justify-content:center;
+    align-items: center;
+    border: 1px solid var(--third-text-clr);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+
+
+#sidebar .navcard:hover{
+background: var(--hover-clr);}
+
+#sidebar .navcard{
+    margin: 1em 0;
+
+}
+
+
+
+#sidebar .navcard-details{
+    padding: 16px 16px 16px 10px;
+        /* border: 1px solid #fff; */
+        line-height: 1.5em;
+}
+
+#sidebar .navcard-details .navcard-position{
+    font-size: 0.80em;
+    color: var(--secondary-text-clr);
+}
+
+#sidebar ul li.separator{
+    border-top: 1px solid var(--third-text-clr);
+}
+
+
+#sidebar ul > li:nth-child(2),
+#sidebar ul > div.bottom-section li:nth-child(1) {
+    margin: 1em 1em;
+    /* border: 1px solid #fff; */
+}
+
+#sidebar ul > div.bottom-section li:nth-child(1) {
+    padding-top: 0.5em;
+}
+
+
+/* WORKEASE CONTAINER LAYOUT SYSTEM */
+
+.we-body-container{
+   padding: 1.6em;
+    background: var(--white);
+    color: var(--base-clr);
+    margin: 0.8em;
+    border-radius: 0.65em;
+    border: 1.5px solid var(--borderColor);
+   
+  
+}
+
+.we-body-title{
+padding: 12px 0;
 }
